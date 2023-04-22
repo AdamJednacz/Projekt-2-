@@ -11,8 +11,8 @@
 header{
     width:100%;
     height: 70px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
     position: sticky;
     top: 0;
     left: 0;
@@ -95,7 +95,7 @@ header{
     width: 440px;
     height: 67px;
     border-radius: 40px;
-    background: #08A6E4 0% 0% no-repeat padding-box;
+    background: #08A6E4 0 0 no-repeat padding-box;
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
@@ -134,7 +134,7 @@ header{
     background-color:#55DFB4 ;}
 
 .h1stats{
-    color#000000 ;
+    color:#000000 ;
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -143,7 +143,7 @@ header{
 }
 
 .h2stats{
-    color#000000 ;
+    color:#000000 ;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -203,6 +203,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding-top:105px;
+
 }
 .box{
     display: flex;
@@ -374,6 +375,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 105px;
 }
 
 .trumpet{
@@ -407,12 +409,151 @@ header{
 
 /*cennik*/
 
+.h2payments{
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 50px;
+}
 
 
 
+.pricing {
+
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
 
 
+.pricing_box {
+    position: relative;
+    width: 370px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 59px;
+}
 
+
+.pricing_box-basic{
+    border: 1px solid #fb3b64;
+}
+.pricing_box-professional{
+    border: 1px solid #07ACE6;
+    box-shadow: 5px 10px 27px #07ACE629;
+    width: 405px;
+    height: 500px;
+
+}
+.pricing_box-premium{
+    border: 1px solid #55DFB4;
+}
+
+
+.pricing_details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing_type {
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.pricing_price {
+    font-size: 2.875rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    color: #fb3b64;
+}
+
+
+.pricing_box-basic .pricing_price  {
+    color: #fb3b64;
+}
+
+
+.pricing_box-professional .pricing_price  {
+    color: #07ACE6;
+}
+
+
+.pricing_box-premium .pricing_price  {
+    color: #55DFB4;
+}
+
+.pricing_limited {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.pricing_items {
+    text-align: center;
+}
+
+.pricing_item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.pricing_item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing_item-not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing_box-basic .btn3 {
+    background-color:#fb3b64 ;
+}
+.pricing_box-professional .btn3 {
+    background-color:#07ACE6 ;
+    position: relative;
+    bottom: -92px;
+    font-size: 0.8125rem;
+
+}
+.pricing_box-premium .btn3 {
+    background-color:#55DFB4 ;
+
+}
+
+.btn3{
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#FFFFFF;
+    text-decoration: none;
+    border-radius: 23px;
+    bottom: -25px;
+    font-size: 0.8125rem;
+}
 
 
 
@@ -420,34 +561,40 @@ header{
 
 /*contact*/
 .contact{
-    padding: 80px 100px 100px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: auto;
+    height: auto;
 }
-
-.contact_column {
+.contact_column{
     width: 50%;
 }
-.contact_title {
+
+.h2contact{
     font-size: 3.0625rem;
     line-height: 3.6875rem;
+    font-family: 'Raleway', sans-serif;
 }
 
-.contact_instruction {
+.pcontact{
     margin: 22px 0 42px;
     font-size: 1rem;
     line-height: 1.375rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.contactdetails {
+.contactdetails{
     display: flex;
+    color:#A5A5A5;
     justify-content: flex-start;
-    color: #A5A5A5;
     align-items: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.details_item {
-    color: #A5A5A5;
+.details_item{
+    color:#A5A5A5 ;
     font-weight: 500;
     text-decoration: none;
 }
@@ -459,36 +606,89 @@ header{
 .details_item img {
     margin-right: 10px;
 }
+.from{
+    display: flex;
+    flex-direction: column;
+}
+
+.from_filed{
+    display: flex;
+    flex-direction: column;
+}
+.from_filed:first-of-type{
+    margin-bottom: 42px;
+}
+
+.form_label{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#08A6E4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6875rem;
+}
+.form_input {
+    border: none;
+    border-bottom: 1px solid #A5A5A5; ;
+    background-color: transparent;
+    line-height: 2.625rem;
+}
+
+.form_consent {
+    margin-top: 30px;
+
+}
+.consent_text{
+    color: #707070;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.375rem;
+}
+
+.form_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form_checkbox .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #A5A5A5;
+    border-radius: 4px;
+}
+
+.btn2{
+    background: #08A6E4 0 0 no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    width: 226px;
+    height: 57px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contactposition{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -498,8 +698,8 @@ header{
     display: flex;
     width:auto;
     height: 89px;
-    background: #F7F7F7 0% 0% no-repeat padding-box;
-    box-shadow: 0px -5px 40px #00000029;
+    background: #F7F7F7 0 0 no-repeat padding-box;
+    box-shadow: 0 -5px 40px #00000029;
     align-items: center;
 }
 .footer{
@@ -517,7 +717,7 @@ header{
 .twitter{
     width: 24px;
     height: 24px;
-    background-image: url("..//assets/Twitter.svg");
+    background-image: url("../assets/Twitter.svg");
     background-repeat: no-repeat;
     padding: 10px;
 }
@@ -526,7 +726,7 @@ header{
     height: 24px;
     padding: 10px;
     background-repeat: no-repeat;
-    background-image: url("..//assets/Facebook.svg");
+    background-image: url("../assets/Facebook.svg");
 }
 
 .copy{
