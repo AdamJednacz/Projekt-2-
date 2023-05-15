@@ -15,6 +15,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -23,6 +24,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Om0q9jguRfwC9alImcPAGvMFZ2" />
   <component name="ProjectViewState">
@@ -36,14 +40,30 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/adamj/Desktop/Kurs/PortableGit/PROJEKTY/projekt-2/Projekt-2-",
-    "list.type.of.created.stylesheet": "CSS",
+    "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adamj\Desktop\Kurs\PortableGit\PROJEKTY\projekt-2\Projekt-2-\css\settings" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Projekt-2-/html/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +76,8 @@
       <workItem from="1682150824897" duration="1751000" />
       <workItem from="1682152631219" duration="199000" />
       <workItem from="1682152979823" duration="25486000" />
+      <workItem from="1682181278902" duration="259000" />
+      <workItem from="1684157527164" duration="4364000" />
     </task>
     <servers />
   </component>
