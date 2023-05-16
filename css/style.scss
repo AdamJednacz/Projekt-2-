@@ -66,6 +66,7 @@ header {
     display: flex;
 
   }
+
   .menu-btn {
     display: none;
 
@@ -92,7 +93,6 @@ header {
 }
 
 
-
 .menu:hover {
   color: $text-color;
   border-color: $hover-border-color;
@@ -109,10 +109,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-.mainitems{
-  @include phone{
+
+.mainitems {
+  @include phone {
     padding: 4em;
   }
+
   .h1main {
     font-size: 49px;
     font-family: 'Raleway', sans-serif;
@@ -153,13 +155,11 @@ header {
   background-repeat: no-repeat;
   background-image: url("../assets/Background.png");
   margin-bottom: 6em;
-  @include phone{
+  @include phone {
 
 
   }
 }
-
-
 
 
 /*Stats*/
@@ -204,7 +204,7 @@ header {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-weight: bolder;
-  @include phone{
+  @include phone {
     margin: 0.5em;
   }
 }
@@ -214,7 +214,7 @@ header {
   color: $second-text-color;
   font-size: 1em;
   text-align: center;
-  @include phone{
+  @include phone {
     margin: 0.5em;
   }
 }
@@ -226,7 +226,7 @@ header {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  @include phone{
+  @include phone {
     display: flex;
     flex-direction: column;
     margin: 0.5em;
@@ -240,7 +240,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include phone{
+  @include phone {
     margin: 0.5em;
   }
 }
@@ -276,8 +276,7 @@ header {
   background-color: $benefits-background-color;
   align-items: center;
   justify-content: space-between;
-  padding-top: 5em;
-
+  padding: 3em;
 }
 
 .box {
@@ -289,29 +288,26 @@ header {
   border-radius: 5px;
   align-items: center;
   flex-wrap: wrap;
-  height: 25em;
-  width: 70em;
+  height: 23.125em;
+  width: 70.25em;
   margin-bottom: 2em;
   flex-direction: row-reverse;
   justify-content: space-between;
-  @include phone{
-    height: 40em;
+  @include phone {
+    height: 43em;
     width: 33em;
   }
 
-  }
-
-
-
+}
 
 
 .line {
   position: relative;
-  left: 30px;
-  height: 4px;
-  width: 327px;
-  @include phone{
-    display:none ;
+  left: 1.2em;
+  height: 0.25em;
+  width: 25em;
+  @include phone {
+    display: none;
   }
 }
 
@@ -330,10 +326,8 @@ header {
 }
 
 
-
-
 .box1 {
-  height: 3em;
+  height: auto;
   display: flex;
   justify-content: space-between;
 
@@ -346,14 +340,13 @@ header {
 
   .box1text {
     display: flex;
-    width: 20em;
+    width: 26em;
     height: auto;
     flex-direction: column;
-    margin-right: 159px;
-    margin-left: 20px;
+    margin-right: 6em;
     justify-content: center;
     align-items: flex-start;
-    @include phone{
+    @include phone {
       width: 25em;
       margin: 0;
     }
@@ -365,26 +358,27 @@ header {
     margin-left: 13em;
     width: auto;
     height: auto;
-    @include phone{
+    @include phone {
 
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+
     .macbook {
       position: relative;
-      top: -5em;
+      top: 5em;
       right: 7em;
 
       width: 24em;
       height: auto;
       z-index: 2;
-      @include phone{
+      @include phone {
 
         position: relative;
-        top: 5em;
-        right:20%;
+        top: 9em;
+        right: 20%;
       }
 
     }
@@ -397,10 +391,10 @@ header {
       border-radius: 40px;
       position: relative;
       left: 20%;
-      bottom: 20em;
+      bottom: 10em;
       @include phone {
         position: relative;
-        bottom: 10em;
+        bottom: 6em;
         left: 10%;
       }
 
@@ -408,27 +402,32 @@ header {
     }
   }
 }
+
 .h2box {
   font-size: 3em;
   color: $text-color;
   font-family: 'Raleway', sans-serif;
   text-align: left;
-  margin: 0.7em;
-  @include phone{
+  margin-left: 0.5em;
+  margin-bottom: 0.7em;
+
+
+  @include phone {
     display: flex;
     justify-content: start;
     margin: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
 }
 
 .pbox {
-  font-size: 1em;
+  font-size: 1.5em;
   color: $text-color;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
-  margin-left: 2em;
-  margin-bottom: 3em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
   @include phone {
     margin: 0;
     padding-bottom: 4em;
@@ -436,140 +435,221 @@ header {
 }
 
 
-
 /* second */
-.box2text {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  margin-left: 169px;
-  justify-content: center;
-  margin-right: 20px;
-
-
-}
 
 
 .box2 {
-  width: 1124px;
-  height: 370px;
+  width: 70em;
+  height: 25em;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box2text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 5em;
+    justify-content: center;
+    margin-right: 1em;
+    @include phone {
+      margin: 0;
+      width: 25em;
+      position: relative;
+      right: 2em;
+    }
+
+  }
+
+  .box2text > .h2box {
+    @include phone {
+      margin: 0;
+    }
 
 
+  }
+
+  .box2text > .pbox {
+    @include phone {
+      padding: 0;
+      margin-top: 2em;
+      padding-bottom: 2em;
+    }
+  }
+
+  .rightside2 {
+    height: 100%;
+    width: 100%;
+    @include phone {
+
+    }
+
+    .phone {
+      position: relative;
+      top: 3em;
+      left: 4em;
+      width: 26em;
+      height: auto;
+      z-index: 2;
+
+    }
+
+    .element2 {
+      position: relative;
+      bottom: 288px;
+      width: 20em;
+      height: 20em;
+      background-color: $element-color-2;
+      border-radius: 50%;
+      left: 4em;
 
 
-}
+    }
 
 
-.phone {
-  position: relative;
-  top: 48px;
-  left: 70px;
-  width: 426px;
-  height: auto;
-  z-index: 2;
-
-}
-
-.element2 {
-  position: relative;
-  bottom: 288px;
-  width: 320px;
-  height: 320px;
-  background-color: $element-color-2;
-  border-radius: 50%;
-  left: 70px;
+  }
 
 
-}
-
-.rightside2 {
-  height: 100%;
-  width: 100%;
 }
 
 
 /* third*/
 
 .third {
-  height: 370px;
-  width: 1124px;
+  height: 23.125em;
+  width: 70.25em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 105px;
-}
+  margin-bottom: 7em;
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    width: 33.125em;
+    height: auto;
+    margin-bottom: 0;
+  }
 
-.trumpet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 440px;
-  height: 370px;
-  border-radius: 5px;
-  background-color: $element-color-3;
-  border: 1px solid $box-border-color;
-}
+  .box33 {
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+    border: 1px solid $box-border-color;
+    border-radius: 5px;
+    width: 39em;
+    height: 23.125em;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      width: 33.125em;
+    }
 
-.box33 {
-  display: flex;
-  align-items: center;
-  background-color: $background-color;
-  border: 1px solid $box-border-color;
-  border-radius: 5px;
-  width: 623px;
-  height: 370px;
-}
+    .box3 {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      @include phone{
+        height: auto;
+      }
+      .box3text{
+        padding: 2em;
+        margin-top: 4em;
+        @include phone{
+          margin: 0;
+        }
 
-.box3 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 20px;
+      }
+
+    }
+
+  }
+
+  .trumpet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27.5em;
+    height: 23.125em;
+    border-radius: 5px;
+    background-color: $element-color-3;
+    border: 1px solid $box-border-color;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      width: 33.125em;
+    }
+  }
+
 }
 
 
 /*cennik*/
 
 .h2payments {
-  font-size: 36px;
+  width: 38.75em;
+  font-size: 2.5em;
   color: $text-color;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  padding-top: 50px;
+  padding-top: 3.125em;
+  margin-bottom: 2em;
+  @include phone{
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin-top: 1em;
+  }
 }
 
 
 .pricing {
 
-  margin: 100px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include phone{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
 
 .pricing_boxes {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
 }
 
 
 .pricing_box {
   position: relative;
-  width: 370px;
-  border-radius: 18px;
+  width: 23.125em;
+  border-radius: 1.125em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 59px;
+  margin: 2em;
+  @include phone{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+  }
 }
 
 
@@ -580,10 +660,17 @@ header {
 .pricing_box-professional {
   border: 1px solid $element-color-2;
   box-shadow: 5px 10px 27px $shadow;
-  width: 405px;
-  height: 500px;
+  width: 25.3125em;
+  @include phone{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
 
-}
+
+
 
 .pricing_box-premium {
   border: 1px solid $element-color-3;
@@ -591,8 +678,8 @@ header {
 
 
 .pricing_details {
-  margin-top: 34px;
-  margin-bottom: 60px;
+  margin-top:2.125em;
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -606,7 +693,7 @@ header {
   font-size: 2.875rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  margin-top: 25px;
+  margin-top: 0.5em;
   color: $element-color-1;
 }
 
@@ -627,7 +714,7 @@ header {
 
 .pricing_limited {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 1em;
   font-size: 0.75rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -639,7 +726,7 @@ header {
 
 .pricing_item {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .pricing_item::before {
@@ -662,8 +749,8 @@ header {
 .pricing_box-professional .btn3 {
   background-color: $element-color-2;
   position: relative;
-  bottom: -92px;
   font-size: 0.8125rem;
+
 
 }
 
@@ -675,16 +762,22 @@ header {
 .btn3 {
   position: relative;
   display: flex;
-  width: 150px;
-  height: 50px;
+  width: 12em;
+  height: 3.5em;
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
   color: $bnt-text-color;
   text-decoration: none;
-  border-radius: 23px;
+  border-radius: 25px;
   bottom: -25px;
   font-size: 0.8125rem;
+  @include phone{
+    position: relative;
+    bottom:-10em;
+    left: -7em;
+
+  }
 }
 
 
@@ -748,7 +841,7 @@ header {
 }
 
 .from_filed:first-of-type {
-  margin-bottom: 42px;
+  margin-bottom: 2.625em;
 }
 
 .form_label {
@@ -767,7 +860,7 @@ header {
 }
 
 .form_consent {
-  margin-top: 30px;
+  margin-top: 1.875em;
 
 }
 
