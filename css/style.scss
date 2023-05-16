@@ -596,18 +596,20 @@ header {
 /*cennik*/
 
 .h2payments {
-  width: 38.75em;
+  width: 42em;
   font-size: 2.5em;
   color: $text-color;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   padding-top: 3.125em;
   margin-bottom: 2em;
+  margin-left: 0;
   @include phone{
     padding: 0;
     width: auto;
     height: auto;
     margin-top: 1em;
+
   }
 }
 
