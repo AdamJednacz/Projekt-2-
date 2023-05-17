@@ -68,6 +68,7 @@ header {
 
 
 }
+
 .left-text {
   color: $third-text-color;
   font-family: 'Raleway', sans-serif;
@@ -78,6 +79,7 @@ header {
   }
 
 }
+
 .icons {
   cursor: pointer;
   background-color: $bnt-text-color;
@@ -144,8 +146,8 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 5px 10px 14px $shadow;
-    @include phone{
-      width:19.375em ;
+    @include phone {
+      width: 19.375em;
     }
 
   }
@@ -280,7 +282,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-top: 6.5625em;
-  @include phone{
+  @include phone {
     padding: 0;
 
   }
@@ -305,7 +307,7 @@ header {
     width: 33em;
     margin-top: 2.625em;
 
-    margin-bottom:0 ;
+    margin-bottom: 0;
 
   }
 
@@ -511,7 +513,7 @@ header {
       width: 26em;
       height: auto;
       z-index: 2;
-      @include phone{
+      @include phone {
         position: relative;
         top: 1em;
         left: 15%;
@@ -527,7 +529,7 @@ header {
       background-color: $element-color-2;
       border-radius: 50%;
       left: 4em;
-      @include phone{
+      @include phone {
         position: relative;
 
       }
@@ -580,13 +582,14 @@ header {
       height: 100%;
       flex-direction: column;
       justify-content: center;
-      @include phone{
+      @include phone {
         height: auto;
       }
-      .box3text{
+
+      .box3text {
         padding: 2em;
         margin-top: 4em;
-        @include phone{
+        @include phone {
           margin: 0;
         }
 
@@ -617,31 +620,34 @@ header {
 
 
 /*cennik*/
-
-.h2payments {
-
-  width: 39em;
-  font-size: 2.5em;
-  color: $text-color;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+.payments {
+  width: auto;
   padding-top: 3.125em;
   margin-bottom: 2em;
-  margin-left: 0;
-  @include phone{
+
+
+  @include phone {
     padding: 0;
     width: auto;
     height: auto;
     margin-top: 1em;
 
   }
+
+  .h2payments {
+    font-size: 2.5em;
+    color: $text-color;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+
   .pricing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 1em;
-    @include phone{
+
+    @include phone {
       display: flex;
       flex-direction: column;
     }
@@ -652,17 +658,21 @@ header {
 
   .pricing_box {
     position: relative;
-    width: 10.05em;
+    width: 23.125em;
+    height: 28.813em;
     border-radius: 1.125em;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin-right: 1em;
     margin-left: 1em;
     margin-top: 1.25em;
 
-    @include phone{
-      width: 7em;
+
+    @include phone {
+      width: 18.313em;
+      height:15.688em ;
       display: flex;
       flex-direction: row;
       margin: 1em;
@@ -671,12 +681,7 @@ header {
     }
   }
 
-
 }
-
-
-
-
 
 
 
@@ -686,19 +691,19 @@ header {
   border: 1px solid $element-color-1;
 }
 
-.pricing_box-professional {
+.pricing_box:nth-child(2) {
   border: 1px solid $element-color-2;
   box-shadow: 5px 10px 27px $shadow;
-  width: 25.3125em;
-  @include phone{
-    width: auto;
+  width: 26em;
+  height: 31.125em;
+  @include phone {
+    width: 24.5em;
+    height:17em; ;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  }
-
-
+}
 
 
 .pricing_box-premium {
@@ -708,10 +713,10 @@ header {
 
 .pricing_details {
   width: auto;
-  margin-top:2.125em;
+  margin-top: 2.125em;
   margin-bottom: 2em;
   text-align: center;
-  @include phone{
+  @include phone {
     margin-right: 2em;
   }
 }
@@ -756,7 +761,7 @@ header {
 .pricing_items {
   text-align: center;
   width: auto;
-  @include phone{
+  @include phone {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -768,7 +773,7 @@ header {
 .pricing_item {
   font-size: 14px;
   margin-bottom: 1.25em;
-  @include phone{
+  @include phone {
     display: flex;
     justify-content: flex-start;
   }
@@ -787,21 +792,28 @@ header {
   background-image: url("../assets/Close.svg");
 }
 
-.pricing_box-basic .btn3 {
+.btn3.red {
   background-color: $element-color-1;
+  @include phone {
+   width: 12em;
+    height: 3.88em;
+
+  }
 }
 
-.pricing_box-professional .btn3 {
+.btn3.blue {
   background-color: $element-color-2;
   position: relative;
   font-size: 0.8125rem;
-
-
 }
 
-.pricing_box-premium .btn3 {
+.btn3.green {
   background-color: $element-color-3;
-
+  position: relative;
+  top:22%;
+  @include phone{
+    top:53%
+  }
 }
 
 .btn3 {
@@ -815,13 +827,12 @@ header {
   color: $bnt-text-color;
   text-decoration: none;
   border-radius: 25px;
-  bottom: -25px;
   font-size: 0.8125rem;
-  @include phone{
-
-    padding-left: 4em;
-    padding-right: 4em;
-
+  top: 27.5%;
+  @include phone {
+    position: relative;
+    top:53%;
+    right:30%;
   }
 }
 
@@ -833,16 +844,31 @@ header {
   justify-content: center;
   width: auto;
   height: auto;
+
 }
+
+.contactposition{
+  @include phone{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 
 .contact_column {
   width: 50%;
+
 }
 
 .h2contact {
   font-size: 3.0625rem;
   line-height: 3.6875rem;
   font-family: 'Raleway', sans-serif;
+  @include phone{
+    text-align: left;
+    font-size: 3rem;
+  }
 }
 
 .pcontact {
@@ -850,6 +876,9 @@ header {
   font-size: 1rem;
   line-height: 1.375rem;
   font-family: 'Open Sans', sans-serif;
+  @include phone{
+    text-align: left;
+  }
 }
 
 .contactdetails {
@@ -859,6 +888,11 @@ header {
   align-items: center;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
+  @include phone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .details_item {
@@ -878,11 +912,13 @@ header {
 .from {
   display: flex;
   flex-direction: column;
+
 }
 
 .from_filed {
   display: flex;
   flex-direction: column;
+
 }
 
 .from_filed:first-of-type {
@@ -953,6 +989,7 @@ header {
   color: $bnt-text-color;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 30px;
+
 }
 
 
