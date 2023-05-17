@@ -48,6 +48,9 @@ header {
     @include phone {
       display: none;
 
+      #menu-btn:checked ~ .menu{
+        display: flex;
+      }
     }
   }
 
@@ -55,19 +58,17 @@ header {
     display: flex;
 
   }
-
   .menu-btn {
     display: none;
 
-    &:checked ~ .menu {
-      display: flex;
-      flex-direction: column;
-    }
-
   }
-
-
 }
+
+
+
+
+
+
 
 .left-text {
   color: $third-text-color;
@@ -159,12 +160,10 @@ header {
   height: 100vh;
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("../assets/Background.png");
   margin-bottom: 6em;
-  @include phone {
 
-
-  }
 }
 
 
@@ -673,7 +672,7 @@ header {
 
     @include phone {
       width: 18.313em;
-      height:15.688em ;
+      height: 15.688em;
       display: flex;
       flex-direction: row;
       margin: 1em;
@@ -683,9 +682,6 @@ header {
   }
 
 }
-
-
-
 
 
 .pricing_box-basic {
@@ -699,7 +695,7 @@ header {
   height: 31.125em;
   @include phone {
     width: 24.5em;
-    height:17em; ;
+    height: 17em;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -796,7 +792,7 @@ header {
 .btn3.red {
   background-color: $element-color-1;
   @include phone {
-   width: 12em;
+    width: 12em;
     height: 3.88em;
 
   }
@@ -811,9 +807,9 @@ header {
 .btn3.green {
   background-color: $element-color-3;
   position: relative;
-  top:22%;
-  @include phone{
-    top:53%
+  top: 22%;
+  @include phone {
+    top: 53%
   }
 }
 
@@ -832,8 +828,8 @@ header {
   top: 27.5%;
   @include phone {
     position: relative;
-    top:53%;
-    right:30%;
+    top: 53%;
+    right: 30%;
   }
 }
 
@@ -848,8 +844,8 @@ header {
 
 }
 
-.contactposition{
-  @include phone{
+.contactposition {
+  @include phone {
     display: flex;
     flex-direction: column;
   }
@@ -866,7 +862,7 @@ header {
   font-size: 3.0625rem;
   line-height: 3.6875rem;
   font-family: 'Raleway', sans-serif;
-  @include phone{
+  @include phone {
     text-align: left;
     font-size: 3rem;
   }
@@ -877,7 +873,7 @@ header {
   font-size: 1rem;
   line-height: 1.375rem;
   font-family: 'Open Sans', sans-serif;
-  @include phone{
+  @include phone {
     text-align: left;
   }
 }
@@ -889,7 +885,7 @@ header {
   align-items: center;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  @include phone{
+  @include phone {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -901,7 +897,7 @@ header {
   color: $second-text-color;
   font-weight: 500;
   text-decoration: none;
-  @include phone{
+  @include phone {
     padding-top: 1em;
   }
 }
@@ -917,10 +913,10 @@ header {
 .from {
   display: flex;
   flex-direction: column;
- }
+}
 
-.buttonbnt2{
-  @include phone{
+.buttonbnt2 {
+  @include phone {
     display: flex;
     justify-content: flex-end;
   }
@@ -1032,16 +1028,15 @@ header {
 
 }
 
-.left-text.down{
-  @include phone{
+.left-text.down {
+  @include phone {
     margin-left: 0;
   }
 }
 
 
-
-.left-footer{
-  @include phone{
+.left-footer {
+  @include phone {
     padding: 1em;
   }
 
@@ -1052,7 +1047,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @include phone{
+  @include phone {
     padding: 1em;
   }
 
