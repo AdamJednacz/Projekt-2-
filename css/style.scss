@@ -76,6 +76,7 @@ header {
   margin-left: 1em;
   @include phone {
     margin-top: 0.5em;
+
   }
 
 }
@@ -276,7 +277,7 @@ header {
 .benefits {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: $benefits-background-color;
   align-items: center;
@@ -298,7 +299,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   height: 23.125em;
-  width: 70.25em;
+  width: auto;
   margin-bottom: 2em;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -892,6 +893,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 3em;
   }
 }
 
@@ -899,6 +901,9 @@ header {
   color: $second-text-color;
   font-weight: 500;
   text-decoration: none;
+  @include phone{
+    padding-top: 1em;
+  }
 }
 
 .details_item:first-of-type {
@@ -912,8 +917,15 @@ header {
 .from {
   display: flex;
   flex-direction: column;
+ }
 
+.buttonbnt2{
+  @include phone{
+    display: flex;
+    justify-content: flex-end;
+  }
 }
+
 
 .from_filed {
   display: flex;
@@ -938,6 +950,9 @@ header {
   border-bottom: 1px solid $form-border;;
   background-color: transparent;
   line-height: 2.625rem;
+  @include phone {
+    padding-top: 2.5em;
+  }
 }
 
 .form_consent {
@@ -1017,11 +1032,29 @@ header {
 
 }
 
+.left-text.down{
+  @include phone{
+    margin-left: 0;
+  }
+}
+
+
+
+.left-footer{
+  @include phone{
+    padding: 1em;
+  }
+
+}
+
 .right-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include phone{
+    padding: 1em;
+  }
 
 }
 
