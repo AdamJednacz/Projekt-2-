@@ -32,17 +32,6 @@ header {
 
   }
 
-  .left-text {
-    color: $third-text-color;
-    font-family: 'Raleway', sans-serif;
-    font-size: 32px;
-    margin-left: 1em;
-    @include phone {
-      margin-top: 0.5em;
-    }
-
-  }
-
   .menu {
     @include desctop {
       display: flex;
@@ -76,8 +65,19 @@ header {
     }
 
   }
-}
 
+
+}
+.left-text {
+  color: $third-text-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  margin-left: 1em;
+  @include phone {
+    margin-top: 0.5em;
+  }
+
+}
 .icons {
   cursor: pointer;
   background-color: $bnt-text-color;
@@ -132,7 +132,7 @@ header {
 
   .bnt1 {
     display: flex;
-    width: 440px;
+    width: 27.5em;
     height: 67px;
     border-radius: 40px;
     background: $bnt1-background-color 0 0 no-repeat padding-box;
@@ -144,6 +144,9 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 5px 10px 14px $shadow;
+    @include phone{
+      width:19.375em ;
+    }
 
   }
 }
@@ -276,7 +279,11 @@ header {
   background-color: $benefits-background-color;
   align-items: center;
   justify-content: space-between;
-  padding: 3em;
+  padding-top: 6.5625em;
+  @include phone{
+    padding: 0;
+
+  }
 }
 
 .box {
@@ -296,6 +303,10 @@ header {
   @include phone {
     height: 43em;
     width: 33em;
+    margin-top: 2.625em;
+
+    margin-bottom:0 ;
+
   }
 
 }
@@ -328,6 +339,7 @@ header {
 
 .box1 {
   height: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -359,7 +371,7 @@ header {
     width: auto;
     height: auto;
     @include phone {
-
+      margin: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -378,7 +390,7 @@ header {
 
         position: relative;
         top: 9em;
-        right: 20%;
+        right: 5%;
       }
 
     }
@@ -395,7 +407,7 @@ header {
       @include phone {
         position: relative;
         bottom: 6em;
-        left: 10%;
+        left: 20%;
       }
 
 
@@ -415,7 +427,7 @@ header {
   @include phone {
     display: flex;
     justify-content: start;
-    margin: 0;
+    margin-left: 0;
     margin-bottom: 1.5em;
   }
 }
@@ -430,7 +442,7 @@ header {
   margin-top: 0.5em;
   @include phone {
     margin: 0;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
   }
 }
 
@@ -479,37 +491,46 @@ header {
 
   .box2text > .pbox {
     @include phone {
-      padding: 0;
       margin-top: 2em;
       padding-bottom: 2em;
     }
   }
 
   .rightside2 {
-    height: 100%;
+    height: 80%;
     width: 100%;
     @include phone {
+      padding-top: 1em;
 
     }
 
     .phone {
       position: relative;
-      top: 3em;
+      top: -1em;
       left: 4em;
       width: 26em;
       height: auto;
       z-index: 2;
+      @include phone{
+        position: relative;
+        top: 1em;
+        left: 15%;
+      }
 
     }
 
     .element2 {
       position: relative;
-      bottom: 288px;
+      bottom: 21em;
       width: 20em;
       height: 20em;
       background-color: $element-color-2;
       border-radius: 50%;
       left: 4em;
+      @include phone{
+        position: relative;
+
+      }
 
 
     }
@@ -550,6 +571,7 @@ header {
       display: flex;
       flex-direction: column;
       width: 33.125em;
+      margin-top: 2.625em;
     }
 
     .box3 {
@@ -587,6 +609,7 @@ header {
       display: flex;
       flex-direction: column;
       width: 33.125em;
+      margin-bottom: 2.625em;
     }
   }
 
@@ -596,7 +619,8 @@ header {
 /*cennik*/
 
 .h2payments {
-  width: 42em;
+
+  width: 39em;
   font-size: 2.5em;
   color: $text-color;
   text-align: center;
@@ -611,48 +635,51 @@ header {
     margin-top: 1em;
 
   }
-}
-
-
-.pricing {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  @include phone{
-    display: flex;
-    flex-direction: column;
-  }
-
-
-}
-
-.pricing_boxes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3.125em;
-}
-
-
-.pricing_box {
-  position: relative;
-  width: 23.125em;
-  border-radius: 1.125em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em;
-  @include phone{
-    width: auto;
+  .pricing {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    margin-left: 1em;
+    @include phone{
+      display: flex;
+      flex-direction: column;
+    }
 
 
   }
+
+
+  .pricing_box {
+    position: relative;
+    width: 10.05em;
+    border-radius: 1.125em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1.25em;
+
+    @include phone{
+      width: 7em;
+      display: flex;
+      flex-direction: row;
+      margin: 1em;
+      padding: 0.5em;
+      justify-content: space-between;
+    }
+  }
+
+
 }
+
+
+
+
+
+
+
 
 
 .pricing_box-basic {
@@ -680,9 +707,13 @@ header {
 
 
 .pricing_details {
+  width: auto;
   margin-top:2.125em;
   margin-bottom: 2em;
   text-align: center;
+  @include phone{
+    margin-right: 2em;
+  }
 }
 
 .pricing_type {
@@ -724,11 +755,23 @@ header {
 
 .pricing_items {
   text-align: center;
+  width: auto;
+  @include phone{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
 }
 
 .pricing_item {
   font-size: 14px;
   margin-bottom: 1.25em;
+  @include phone{
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .pricing_item::before {
@@ -775,9 +818,9 @@ header {
   bottom: -25px;
   font-size: 0.8125rem;
   @include phone{
-    position: relative;
-    bottom:-10em;
-    left: -7em;
+
+    padding-left: 4em;
+    padding-right: 4em;
 
   }
 }
