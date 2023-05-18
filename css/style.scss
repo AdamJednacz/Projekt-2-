@@ -664,7 +664,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: space-between;
     margin-right: 1em;
     margin-left: 1em;
     margin-top: 1.25em;
@@ -674,15 +674,28 @@ header {
       width: 18.313em;
       height: 15.688em;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin: 1em;
       padding: 0.5em;
-      justify-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
     }
   }
 
 }
-
+.row1{
+  @include phone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.row2{
+  @include phone {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 
 .pricing_box-basic {
   border: 1px solid $element-color-1;
@@ -802,15 +815,13 @@ header {
   background-color: $element-color-2;
   position: relative;
   font-size: 0.8125rem;
+  @include phone{
+    top: 120%;
+  }
 }
 
 .btn3.green {
   background-color: $element-color-3;
-  position: relative;
-  top: 22%;
-  @include phone {
-    top: 53%
-  }
 }
 
 .btn3 {
@@ -825,13 +836,17 @@ header {
   text-decoration: none;
   border-radius: 25px;
   font-size: 0.8125rem;
-  top: 27.5%;
+  top: 50%;
   @include phone {
     position: relative;
-    top: 53%;
-    right: 30%;
+    top: 70%;
+
   }
 }
+
+
+
+
 
 
 /*contact*/
