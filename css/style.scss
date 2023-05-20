@@ -33,6 +33,7 @@ header {
     height: 4em;
     @include phone{
       justify-content: space-around;
+
     }
   }
 
@@ -41,16 +42,26 @@ header {
   display: flex;
   flex-direction: row;
   @include phone {
-    display: none;
-    flex-direction: column;
+      display: none;
+      flex-direction: column;
+      width:auto ;
+      height: 4em;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7em;
+      background-color:$background-color ;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $second-text-color;
   }
 }
 .menu-btn {
   display: none;
-  &:checked ~ .menuelements {
+  @include phone {
+    &:checked ~ .elements {
     display: flex;
     flex-direction: column;
   }
+}
 }
 
 .menu {
