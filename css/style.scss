@@ -52,6 +52,8 @@ header {
       text-transform: uppercase;
       font-weight: bold;
       color: $second-text-color;
+
+
   }
 }
 .menu-btn {
@@ -59,10 +61,26 @@ header {
   @include phone {
     &:checked ~ .elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+
   }
 }
 }
+
+.menuelements{
+  @include phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+
+}
+
 
 .menu {
   @include desctop {
@@ -76,6 +94,10 @@ header {
     align-items: center;
     padding: 1.75em 2.96875em 1.375em;
     border-bottom: solid 4px transparent;
+
+  }
+  @include phone{
+    padding: 1em;
   }
 }
 
