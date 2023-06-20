@@ -16,6 +16,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -33,23 +34,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/adamj/Desktop/Kurs/PortableGit/PROJEKTY/projekt-2/Projekt-2-&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/adamj/Desktop/Kurs/PortableGit/PROJEKTY/projekt-2/Projekt-2-",
+    "list.type.of.created.stylesheet": "Sass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adamj\Desktop\Kurs\PortableGit\PROJEKTY\projekt-2\Projekt-2-\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adamj\Desktop\Kurs\PortableGit\PROJEKTY\projekt-2\Projekt-2-\css\settings" />
     </key>
@@ -90,7 +94,14 @@
       <workItem from="1684330786265" duration="12790000" />
       <workItem from="1684344728430" duration="1656000" />
       <workItem from="1684412179289" duration="5296000" />
-      <workItem from="1684598356307" duration="2370000" />
+      <workItem from="1684598356307" duration="2420000" />
+      <workItem from="1684689583731" duration="52000" />
+      <workItem from="1684859914252" duration="82000" />
+      <workItem from="1685543319420" duration="37000" />
+      <workItem from="1685543453485" duration="639000" />
+      <workItem from="1687275706931" duration="395000" />
+      <workItem from="1687277146096" duration="2510000" />
+      <workItem from="1687279722035" duration="6212000" />
     </task>
     <servers />
   </component>

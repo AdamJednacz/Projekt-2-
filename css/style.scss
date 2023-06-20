@@ -1,7 +1,7 @@
 @import "settings/all";
 @import "settings/_reset.css";
 @import "settings/mixins";
-
+@import "elements/all";
 * {
   margin: 0;
   padding: 0;
@@ -144,15 +144,15 @@ header {
   }
 
   .h1main {
-    font-size: 49px;
+    font-size: 3.0625em;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    margin: 20px;
+    margin: 1.25em;
   }
 
   .pmain {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: $text-color;
     text-align: center;
 
@@ -938,7 +938,7 @@ header {
 .consent_text {
   color: $consent-text-color;
   font-size: 0.6em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .form_checkbox {
