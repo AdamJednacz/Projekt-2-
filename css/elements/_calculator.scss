@@ -140,14 +140,14 @@
       margin-top: 30px;
   }
 
-    .summary__total,
-    .list__item {
+    .summary__total,  .list__item {
       box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
       border-radius: 6px;
       justify-content: space-between;
       align-items: center;
       color: $text-color-white;
       font-size: 0.875rem;
+      font-family: 'Open Sans', sans-serif;
       display: none;
 
       &.open {
