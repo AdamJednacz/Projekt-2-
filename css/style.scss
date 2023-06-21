@@ -104,7 +104,8 @@ header {
 .left-text {
   color: $third-text-color;
   font-family: 'Raleway', sans-serif;
-  font-size: 32px;
+  font-size: 2em;
+
   @include phone {
     padding: 0.5em;
 

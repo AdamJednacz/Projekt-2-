@@ -29,12 +29,16 @@ const optionsPrice = document.querySelector(".list__item[data-id = package] .ite
 const total = document.getElementById("total-price")
 const listItems = document.querySelectorAll("input");
 const totalPrice = document.querySelector(".total__price")
+//
+
 //kod dla ceny prodktów//
 product.addEventListener("input", handleAddValue)
 function handleAddValue(){
         listProduct.classList.add("open");
         productCalc.innerText = product.value + " * " + "$0.5"
+
         productPrice.innerText = "$"+ product.value * 0.5
+
 
 }
 //kod dla ceny zamówień //
@@ -43,6 +47,7 @@ function handleAddValueOrder(){
     listOrder.classList.add("open");
     orderCalc.innerText = order.value + " * " + "$0.25"
     orderPrice.innerText = "$"+ order.value * 0.25
+
 }
 
 //kod dla accounting//
@@ -94,8 +99,8 @@ listItems.forEach(function (listItem){
     listItem.addEventListener("input" , handleAddTotal)
     function handleAddTotal(){
         total.classList.add("open")
-        totalPrice.innerText = 0
-       }
+    }
+    totalPrice.innerText =1
 })
 
 
