@@ -85,11 +85,9 @@ optionsValue.forEach(function (optionValue) {
     optionValue.addEventListener("click", handleAddOption)
     optionsPrice.innerText = 0
     function handleAddOption() {
-
         selectInput.innerText = optionValue.dataset.value
         listOptions.classList.add("open")
         optionsCalc.innerText = optionValue.dataset.value
-
         if (optionValue.dataset.value === "Basic") {
             optionsPrice.innerText = "$" + 0
         }
