@@ -11,13 +11,16 @@
   max-width: 1352px;
   margin: 0 auto;
   width: 100%;
+  @include phone{
+
+  }
 }
 
 header {
   display:flex ;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   background: $background-color 0 0 no-repeat padding-box;
   box-shadow: 0 3px 6px $header-shadow;
   position: sticky;
@@ -137,11 +140,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .mainitems {
   @include phone {
-    padding: 4em;
+  font-size: 0.7em;
+    width: auto;
+
   }
 
   .h1main {
@@ -174,7 +180,7 @@ header {
     justify-content: center;
     box-shadow: 5px 10px 14px $shadow;
     @include phone {
-      width: 19.375em;
+      width: auto;
     }
 
   }
@@ -573,11 +579,11 @@ header {
 /* third*/
 
 .third {
-  height: 23.250em;
+  height: auto;
   width: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   margin-bottom: 7em;
   @include phone {
@@ -594,13 +600,13 @@ header {
     background-color: $background-color;
     border: 1px solid $box-border-color;
     border-radius: 5px;
-    width: 35%;
+    width: 50%;
     height: 23.125em;
     margin-right: 6em;
     @include phone {
       display: flex;
       flex-direction: column;
-      width: 25em;
+      width: auto;
       height: auto;
       margin-top: 2.625em;
       margin-right: 0;
@@ -625,9 +631,9 @@ header {
     @include phone {
       display: flex;
       flex-direction: column;
-      width: 25em;
+      width: 70%;
       margin-bottom: 2.625em;
-      height: auto;
+      height: 70%;
     }
   }
 }
