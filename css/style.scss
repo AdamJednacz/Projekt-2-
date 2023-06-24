@@ -2,6 +2,7 @@
 @import "settings/_reset.css";
 @import "settings/_mixins";
 @import "elements/_all";
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +12,13 @@
   max-width: 1352px;
   margin: 0 auto;
   width: 100%;
-  @include phone{
+  @include phone {
 
   }
 }
 
 header {
-  display:flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100%;
@@ -27,6 +28,7 @@ header {
   top: 0;
   left: 0;
   z-index: 3;
+
   .top {
     width: auto;
     display: flex;
@@ -34,54 +36,57 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 4em;
-    @include phone{
+    @include phone {
       justify-content: space-around;
 
     }
   }
 
 }
- .elements {
+
+.elements {
   display: flex;
   flex-direction: row;
   @include phone {
-      display: none;
-      flex-direction: column;
-      width:auto ;
-      height: 4em;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.7em;
-      background-color:$background-color ;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $second-text-color;
+    display: none;
+    flex-direction: column;
+    width: auto;
+    height: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    background-color: $background-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $second-text-color;
 
 
   }
 }
+
 .menu-btn {
   display: none;
   @include phone {
     &:checked ~ .elements {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &:checked ~ .menu-btn{
+      position: relative;
+      top: 3em;
+    }
   }
-}
+
 }
 
-.menuelements{
-  @include phone{
+.menuelements {
+  @include phone {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
   }
-
-
 }
 
 
@@ -97,9 +102,11 @@ header {
     align-items: center;
     padding: 1.75em 2.96875em 1.375em;
     border-bottom: solid 4px transparent;
-
   }
-  @include phone{
+  @include phone {
+    content: "";
+    background-color: $background-color;
+
     padding: 1em;
   }
 }
@@ -116,7 +123,7 @@ header {
 }
 
 .icons {
-  cursor: pointer ;
+  cursor: pointer;
   background-color: $bnt-text-color;
   color: $bnt1-background-color;
   border-radius: 0.5em;
@@ -145,7 +152,7 @@ header {
 
 .mainitems {
   @include phone {
-  font-size: 0.7em;
+    font-size: 0.7em;
     width: auto;
 
   }
@@ -170,7 +177,7 @@ header {
     width: 27.5em;
     height: 67px;
     border-radius: 40px;
-    background-color: $bnt1-background-color ;
+    background-color: $bnt1-background-color;
     color: $bnt-text-color;
     text-decoration: none;
     text-align: center;
@@ -196,12 +203,13 @@ header {
   margin-bottom: 6em;
 
 }
+
 /*Stats*/
 .stats {
   padding-bottom: 5em;
 }
 
-.circle{
+.circle {
   width: 4em;
   height: 4em;
   border-radius: 50%;
@@ -219,15 +227,15 @@ header {
   background-color: $element-color-3;
 }
 
-.hstats{
+.hstats {
   color: $text-color;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
 .h1stats {
-   font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .h2stats {
@@ -379,6 +387,7 @@ header {
       align-items: center;
     }
   }
+
   .rightside1 {
     display: flex;
     flex-direction: column;
@@ -393,9 +402,10 @@ header {
       justify-content: center;
       align-items: center;
     }
+
     .macbook {
       position: relative;
-      top:30%;
+      top: 30%;
       right: 20%;
       width: 24em;
       height: auto;
@@ -407,6 +417,7 @@ header {
         right: 5%;
       }
     }
+
     .element1 {
       width: 13em;
       height: 13em;
@@ -414,7 +425,7 @@ header {
       transform: rotate(45deg);
       border-radius: 40px;
       position: relative;
-      bottom:30%;
+      bottom: 30%;
 
       @include phone {
         position: relative;
@@ -487,17 +498,18 @@ header {
     height: auto;
     flex-direction: column;
     margin-left: 6em;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
     @include phone {
       width: 25em;
       margin: 0;
     }
   }
+
   .rightside2 {
     margin-right: 13em;
     width: auto;
-    height:auto;
+    height: auto;
     @include phone {
       margin: 0;
       display: flex;
@@ -506,6 +518,7 @@ header {
       align-items: center;
 
     }
+
     .phone {
       position: relative;
       top: 8em;
@@ -515,11 +528,12 @@ header {
       z-index: 2;
       @include phone {
         position: relative;
-        top:8em;
+        top: 8em;
         left: 1em;
 
       }
     }
+
     .element2 {
       width: 17em;
       height: 17em;
@@ -574,7 +588,6 @@ header {
 }
 
 
-
 /* third*/
 
 .third {
@@ -610,11 +623,12 @@ header {
       margin-top: 2.625em;
       margin-right: 0;
     }
-      .box3text {
-        margin-top: 4em;
-        @include phone {
-          margin-top: 3em;
-        }
+
+    .box3text {
+      margin-top: 4em;
+      @include phone {
+        margin-top: 3em;
+      }
     }
   }
 
@@ -1067,15 +1081,17 @@ header {
   align-items: center;
   @include phone {
     padding: 1em;
-      }
+  }
 
 }
-.social{
+
+.social {
   width: 1.5em;
   height: 1.5em;
   background-repeat: no-repeat;
   padding: 0.6em;
 }
+
 .twitter {
   background-image: url("../assets/Twitter.svg");
 }
