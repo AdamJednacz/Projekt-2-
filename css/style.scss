@@ -503,6 +503,7 @@ header {
     @include phone {
       width: 25em;
       margin: 0;
+      align-items: center;
     }
   }
 
@@ -566,6 +567,7 @@ header {
     margin-top: 0;
     position: relative;
     bottom: 2em;
+    word-break: break-all;
 
   }
 }
