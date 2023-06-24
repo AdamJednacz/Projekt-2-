@@ -309,7 +309,6 @@ header {
 
 .box {
   font-family: 'Raleway', sans-serif;
-
   display: flex;
   background: $background-color;
   border: 1px solid $box-border-color;
@@ -322,7 +321,7 @@ header {
   justify-content: space-between;
   @include phone {
     height: 43em;
-    width: auto;
+    width: 99%;
     margin-top: 2.625em;
     margin-bottom: 0;
 
@@ -589,7 +588,7 @@ header {
   @include phone {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 99%;
     height: auto;
     margin-bottom: 0;
   }
